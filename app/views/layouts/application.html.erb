@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A doo-hickey made to show charts for a college course">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info Visualization</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="../assets/android-desktop.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="../assets/ios-desktop.png">
+
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+
+  <script src="../assets/title.js"></script>
+  <link rel="shortcut icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.cyan-light_blue.min.css">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/global.css">
+  <link rel="stylesheet" href="../assets/application.css">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+</head>
+<body>
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="demo-header mdl-layout__header mdl-color--cyan-900 mdl-color-text--grey-50">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title mdl-color-text---grey-50" id="where_page_title_goes"></span>
+      <div class="mdl-layout-spacer"></div>
+
+    </div>
+  </header>
+  <div class="demo-drawer mdl-layout__drawer mdl-color--teal-900 mdl-color-text--blue-grey-50">
+    <header class="demo-drawer-header">
+      <img src="../assets/jarjar.jpg" class="demo-avatar">
+      <div class="demo-avatar">
+        <span> Peter Norcross</span>
+        <div class="mdl-layout-spacer"></div>
+
+      </div>
+    </header>
+    <nav class="demo-navigation mdl-navigation mdl-color--teal-700">
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons">Home</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/ar">Arkansas</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/la">Louisiana</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/ma">Massachusetts</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/vt">Vermont</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/large_comp">Large Comparison</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/ffr">Fast Food</a>
+      <a class="mdl-navigation__link mdl-color-text--grey-50" href="/persons/groc">Grocery Stores</a>
+
+      <div class="mdl-layout-spacer"></div>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content mdl-color--grey-100">
+    <div>
+      <%= yield %>
+    </div>
+  </main>
+
+
+
+
+</div>
+<script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<div>
+  <p id="page_title" style="color:#f4f4f4">Home</p>
+
+  <div class="mdl-cell--8-col">
+
+    <%= form_tag import_persons_path, class: '', multipart: true do %>
+        <%= file_field_tag :file, class: 'mdl-textfield mdl-color-blue-700 mdl-color-text--blue-grey-900' %>
+        <%= submit_tag "Import", class: 'buttons mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color--blue-700 mdl-color-text--white' %>
+    <% end %>
+  </div>
+
+</div>
+
+<div class="">
+  <img src="../assets/johncena.jpg" class="demo-avatar">
+</div>
+
+
+<div class="mdl-cell--12-col">
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+</div>
+
+
+<div class="mdl-cell--12-col">
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+
+  <div class="mdl-card mdl-cell images">
+    <img src="../assets/grumpycatepic.jpg" class="article-image mdl-cell--12-col">
+  </div>
+</div>

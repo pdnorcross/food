@@ -1,0 +1,11 @@
+/*
+ *= require_tree .
+ *= require dataTables/jquery.dataTables
+ *= require bootstrap
+ *= require material-design-lite
+ *= require material-icons
+ *= require styles
+ *= require global
+ *= require_self
+*/
+
